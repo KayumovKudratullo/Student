@@ -1,4 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .models import Lenovo
 
 def home_page(request):
-    return render(request, 'index.html')
+    data = Lenovo.objects.all()
+    context = {}
+    context['datas'] = data
+    return render(request, 'index.html', context)
