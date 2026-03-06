@@ -1,3 +1,6 @@
 env
 start.py
 __pycache__
+restoran-1.0.0
+db.sqlite3
+.gitignore
