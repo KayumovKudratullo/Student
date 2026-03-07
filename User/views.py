@@ -11,3 +11,12 @@ def home_page(request):
             series_number = request.POST['series_number'],
         )
     return render(request, 'index.html', context)
+
+def about(request):
+    return render(request, 'about.html')
+
+def booking(request):
+    return render(request, 'booking.html')
+
+def contact(request):
+    return render(request, 'contact.html')
