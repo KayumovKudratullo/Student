@@ -2,8 +2,11 @@ from django.shortcuts import render, redirect
 from User import models
 
 def index(request):
-    context = models.About()
-    return render(request, 'index.html')
+    banners = models.Banner.objects.all()
+
+    context = {}
+    context['banners'] = banners
+    return render(request, 'index.html', context)
 
 def about(request):
     return render(request, 'about.html')

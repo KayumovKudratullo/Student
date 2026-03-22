@@ -5,3 +5,4 @@ restoran-1.0.0
 db.sqlite3
 .gitignore
 migrations
+media
