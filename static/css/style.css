@@ -148,9 +148,14 @@
         background: var(--dark) !important;
     }
 }
+.rotate-img {
+    animation: imgRotate 120s linear infinite;
+}
 
-.hero-header img {
-    animation: imgRotate 50s linear infinite;
+.small-img {
+    width: 70px;
+    height: auto;
+    margin-top: 250px;
 }
 
 @keyframes imgRotate { 
@@ -158,7 +163,6 @@
         transform: rotate(360deg); 
     } 
 }
-
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
