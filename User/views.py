@@ -2,10 +2,10 @@ from django.shortcuts import render, redirect
 from User import models
 
 def index(request):
-    banners = models.Banner.objects.all()
+    banner = models.Banner.objects.last()
 
     context = {}
-    context['banners'] = banners
+    context['banner'] = banner
     return render(request, 'index.html', context)
 
 def about(request):

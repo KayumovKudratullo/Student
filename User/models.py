@@ -3,8 +3,8 @@ from django.db import models
 class Banner(models.Model):
     title = models.CharField()
     text = models.TextField()
-    background_img = models.ImageField()
-    corusel_img = models.ImageField()
+    background_img = models.ImageField(upload_to='banners/')
+    corusel_img = models.ImageField(upload_to='banners/', null=True, blank=True)
 
 class Service(models.Model):
     icon_text = models.CharField()
